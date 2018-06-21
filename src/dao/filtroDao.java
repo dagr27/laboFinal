@@ -21,8 +21,8 @@ import modelo.Filtro;
  * @author Daniel Gómez
  */
 public class filtroDao implements metodos<Filtro> {
-    private static final String SQL_INSERT = "Insert into filtros_aceite (codFiltro,marca,stock,existencial) Values (?,?,?,?)";
-    private static final String SQL_UPDATE = "Update filtros_aceites SET marca = ?, stock=?,existencia=? where codFiltro=?";
+    private static final String SQL_INSERT = "INSERT INTO filtros_aceite (CodFiltro, marca, stock, existencia) VALUES(?,?,?,?)";
+    private static final String SQL_UPDATE = "UPDATE filtros_aceite SET marca = ?, stock = ?, existencia = ? WHERE CodFiltro = ?";
     private static final String SQL_DELETE= "Delete from filtros_aceite where codFiltro=?";
     private static final String SQL_READ = "Select * from filtros_aceite where codFiltro=?";
     private static final String SQL_READALL="Select * from filtros_aceite";
